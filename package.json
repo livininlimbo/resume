@@ -1,7 +1,7 @@
 {
   "name": "newportfolio",
   "private": false,
-  "homepage": "https://calebregan.me/cv/",
+  "homepage": "https://calebregan.me/resume/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
