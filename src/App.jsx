@@ -36,7 +36,7 @@ function App() {
 
             {/* <Projects /> */}
 
-            <Contact />
+            {/* <Contact /> */}
 
             <ScrollToTop />
 
