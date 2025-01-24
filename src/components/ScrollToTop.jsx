@@ -29,7 +29,7 @@ function ScrollToTop(darkMode, toggleDarkMode) {
 
     return (
         <>
-        <button className={` scroll block fixed bottom-3 right-5 cursor-pointer text-align text-black dark:text-white text-center transition-all duration-500`} style={{opacity: visible ? '100' : '0' }}
+        <button className={` scroll block fixed bottom-4 right-5 cursor-pointer text-align text-black dark:text-white text-center transition-all duration-500`} style={{opacity: visible ? '100' : '0' }}
         onClick={scrollToTop} >
             <BiChevronUpCircle className={`size-8 animate-bounce`} />
 
