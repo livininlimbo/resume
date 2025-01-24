@@ -20,7 +20,7 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
 
                     </div>
 
-                    <button className='absolute md:left-10 md:top-8 md:-translate-y-20 lg:left-10 lg:top-8 lg:-translate-y-20 sm:right-10 sm:top-10 sm:translate-y-0 xs:right-10 xs:top-10 xs:translate-y-0' onClick={toggleDarkMode}> 
+                    <button className='absolute md:left-10 md:top-8 md:-translate-y-20 lg:left-10 lg:top-8 lg:-translate-y-20 sm:right-10 sm:top-10 sm:translate-y-0 xs:right-10 xs:top-0 xs:-translate-y-8' onClick={toggleDarkMode}> 
                         {
                             darkMode ? (
                                 <BiSun className ='text-2xl'/>

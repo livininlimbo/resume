@@ -189,7 +189,7 @@ const HomeRight = () => {
 
                         </div>
                         <div className="space-y-10">
-                        <h1 className="text-2xl font-bold md:text-3xl pt-" >References
+                        <h1 className="text-2xl font-bold md:text-3xl -mt-12" >References
                             <div className = 'flex flex-col justify-start items-start lg:flex-row lg:gap-20 '>
                                 <ul >
                                     <li className='relative flex flex-col gap-1 p-6 pt-8 pb-2 '>
