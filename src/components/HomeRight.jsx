@@ -9,7 +9,7 @@ const HomeRight = () => {
             {/* <Header /> */}
             <main className ="flex max-w-[1000px] flex-col gap-10 p-5 md:mx-10 md:py-14">
                 <div className="space-y-5">
-                    <h1 className="flex flex-col pt-8 items-start justify-start text-2xl font-bold md:text-3xl">Professional Summary 
+                    <h1 className="flex flex-col pt-4 items-start justify-start text-2xl font-bold md:text-3xl">Professional Summary 
                         {/* <span className="text-[#F76C6C]">John Doe</span> */}
                         <p className='mt-10 text-lg text-gray-600 dark:text-gray-400 md:text-base sm:text-sm font-extralight flex flex-col'>
                         Front-End Web Developer with experience creating user-friendly interfaces that boost engagement and satisfaction. 
