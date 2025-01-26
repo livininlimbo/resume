@@ -87,6 +87,9 @@ const HomeRight = () => {
                                         <span className='text-sm font-light italic text-gray-400 dark:text-gray-500 pt-.5 -translate-x-0'>
                                             Expected Graduation: Aug 2026
                                         </span>
+                                        <span className='text-sm font-light italic text-gray-400 dark:text-gray-500 pt-.5 -translate-x-0'>
+                                            GPA: 4.0
+                                        </span>
                                         <div className='relative flex flex-wrap gap-16 border-l border-dashed border- p-6 pt-2'>
                                             <ul className='-mb-8'>
                                             <h1 className='-translate-x-2'>
