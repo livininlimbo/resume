@@ -54,12 +54,12 @@ const HomeRight = () => {
                                             </li>
                                             <li className='flex items-center text-sm font-light pt-2'>
                                                 <IoIosArrowForward className='text-base -translate-x-2'/>
-                                                <span>Experience troubleshooting and resolving front-end issues ensuring seamless user experience.
+                                                <span>Experience with troubleshooting and resolving front-end issues to ensure a seamless user experience.
                                                 </span>
                                             </li>
                                             <li className='flex items-center text-sm font-light pt-2'>
                                                 <IoIosArrowForward className='text-base -translate-x-2'/>
-                                                <span>Produces measurable improvements in website traffic and user retention.</span>
+                                                <span>Produced measurable improvements in website traffic and user retention.</span>
                                             </li>
 
                                         </div>
@@ -76,13 +76,16 @@ const HomeRight = () => {
                             <ul>
                                     <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:left-[-6px] before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:bg-black dark:before:bg-white before:transform'>
                                         <span className='text-xl font-semibold'>
-                                            Cybersecurity
+                                            Bachelor of Science in Cybersecurity
                                         </span>
                                         <span className='flex flex-wrap text-lg font-light italic text-gray-700 dark:text-gray-300'>
                                             Purdue University Global
                                         </span>
                                         <span className='text-base font-light text-gray-400'>
                                             2023 - Present 
+                                        </span>
+                                        <span className='text-sm font-light italic text-gray-300 dark:text-gray-500 pt-.5 -translate-x-0'>
+                                            Expected Graduation: Aug 2026
                                         </span>
                                         <div className='relative flex flex-wrap gap-16 border-l border-dashed border- p-6 pt-2'>
                                             <ul className='-mb-8'>
