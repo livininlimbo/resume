@@ -84,7 +84,7 @@ const HomeRight = () => {
                                         <span className='text-base font-light text-gray-400'>
                                             2023 - Present 
                                         </span>
-                                        <span className='text-sm font-light italic text-gray-300 dark:text-gray-500 pt-.5 -translate-x-0'>
+                                        <span className='text-sm font-light italic text-gray-400 dark:text-gray-500 pt-.5 -translate-x-0'>
                                             Expected Graduation: Aug 2026
                                         </span>
                                         <div className='relative flex flex-wrap gap-16 border-l border-dashed border- p-6 pt-2'>
