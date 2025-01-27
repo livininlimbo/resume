@@ -4,8 +4,8 @@ import projectImage1 from '../assets/images/black.jpeg'
 
 export const Projects = () => {
     return (
-        <div className="bg-white dark:bg-black ">
-            <div className="flex flex-col relative items-center justify-center border-t border-gray-200 dark:border-gray-700 pt-36 h-full ">
+        <div className="min-h-screen flex-[3] transition-all duration-500 dark:bg-black dark:text-white">
+            <div className="flex flex-col relative items-center justify-center  pt-36 h-full ">
                 <h1 className="flex text-5xl font-bold relative -pb-24 -mb-16 text-gray-800 dark:text-white">Projects</h1>
 
                 <div className="w-full grid grid-cols relative m-5 items-center justify-center align-center translate-x-8">

@@ -2,6 +2,7 @@ import React from 'react';
 import { IoIosAdd, IoIosArrowForward } from 'react-icons/io';
 import { BiPhone, BiEnvelope } from 'react-icons/bi';
 import { Header } from './Header';
+import { motion } from 'motion/react';
 
 const HomeRight = () => {
     return (
@@ -9,7 +10,7 @@ const HomeRight = () => {
             {/* <Header /> */}
             <main className ="flex max-w-[1000px] flex-col gap-10 p-5 md:mx-10 md:py-14">
                 <div className="space-y-5">
-                    <h1 className="flex flex-col pt-4 items-start justify-start text-2xl font-bold md:text-3xl">Professional Summary 
+                    <motion.h1 initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className="flex flex-col pt-4 items-start justify-start text-2xl font-bold md:text-3xl">Professional Summary 
                         {/* <span className="text-[#F76C6C]">John Doe</span> */}
                         <p className='mt-10 text-lg text-gray-600 dark:text-gray-400 md:text-base sm:text-sm font-extralight flex flex-col'>
                         Front-End Web Developer with experience creating user-friendly interfaces that boost engagement and satisfaction. 
@@ -18,10 +19,10 @@ const HomeRight = () => {
                         Experienced in automating processes with Python as well as storing and manipulating data with SQL. 
                         Proficient with Docker and Azure; familiar with Kubernetes and AWS.
                         </p>
-                    </h1>
+                    </motion.h1>
                     <div className="space-y-10">
-                        <h1 className="text-2xl font-bold md:text-3xl flex flex-col pt-8 items-start justify-start">Experience
-                            <div className = 'flex flex-col pt-6 lg:flex-row lg:gap-20'>
+                        <motion.h1 initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className="text-2xl font-bold md:text-3xl flex flex-col pt-8 items-start justify-start">Experience
+                            <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className = 'flex flex-col pt-6 lg:flex-row lg:gap-20'>
                             <ul>
                                     <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:left-[-6px] before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:bg-black dark:before:bg-white before:transform'>
                                         <span className='text-xl font-semibold'>
@@ -66,13 +67,13 @@ const HomeRight = () => {
                                     </li>
                                 </ul> 
                                 
-                            </div>
-                        </h1>
+                            </motion.div>
+                        </motion.h1>
 
                         </div>
                         <div className="space-y-10">
-                        <h1 className="text-2xl font-bold md:text-3xl flex flex-col pt-8 items-start justify-start">Relevant Courses
-                            <div className = 'flex flex-col pt-6 lg:flex-row lg:gap-20'>
+                        <motion.h1 initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}}className="text-2xl font-bold md:text-3xl flex flex-col pt-8 items-start justify-start">Relevant Courses
+                            <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}}className = 'flex flex-col pt-6 lg:flex-row lg:gap-20'>
                             <ul>
                                     <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:left-[-6px] before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:bg-black dark:before:bg-white before:transform'>
                                         <span className='text-xl font-semibold'>
@@ -167,14 +168,14 @@ const HomeRight = () => {
                                     </li>
                                 </ul> 
                                 
-                            </div>
-                        </h1>
+                            </motion.div>
+                        </motion.h1>
 
                         </div>
                         
                         <div className="space-y-10">
-                        <h1 className="text-2xl font-bold md:text-3xl flex flex-col pt-8 items-start justify-start">Certificates
-                            <div className = 'flex flex-col pt-6 justify-start items-center lg:flex-row lg:gap-20 pb-20'>
+                        <motion.h1 initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}}className="text-2xl font-bold md:text-3xl flex flex-col pt-8 items-start justify-start">Certificates
+                            <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className = 'flex flex-col pt-6 justify-start items-center lg:flex-row lg:gap-20 pb-20'>
                             <ul>
                                     <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:left-[-6px] before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:bg-black dark:before:bg-white before:transform'>
                                         <span className='text-xl font-semibold'>
@@ -190,11 +191,11 @@ const HomeRight = () => {
                                     </li>
                                 </ul> 
                                 
-                            </div>
-                        </h1>
+                            </motion.div>
+                        </motion.h1>
 
                         </div>
-                        <div className="space-y-10">
+                        <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className="space-y-10">
                         <h1 className="text-2xl font-bold md:text-3xl -mt-12" >References
                             <div className = 'flex flex-col justify-start items-start lg:flex-row lg:gap-20 '>
                                 <ul >
@@ -261,7 +262,7 @@ const HomeRight = () => {
                             </div>
                         </h1>
 
-                        </div>
+                        </motion.div>
                 </div>
 
             </main>

@@ -8,6 +8,7 @@ import {
   } from "react-router-dom";
 import { BiDownload, BiSolidContact } from 'react-icons/bi';
 import CV from '../assets/CalebReganCV.pdf';
+import { motion} from 'motion/react';
 
 export const Header= () => {
 
@@ -69,7 +70,7 @@ export const Header= () => {
           <div className="flex flex-wrap items-start justify-start h-full gap-16">
                 
             <div className="w-full max-w-screen-xl mx-auto pr-4 mr-2 md:py-4 ">
-            <div className="flex flex-wrap md:items-end md:justify-end lg:items-end lg:justify-end 2xl:items-end 2xl:justify-end h-full gap-6 sm:items-center sm:justify-center">
+            <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className="flex flex-wrap md:items-end md:justify-end lg:items-end lg:justify-end 2xl:items-end 2xl:justify-end h-full gap-6 sm:items-center sm:justify-center">
                 {/* <button className="text-2xl font-bold text-gray-800 dark:text-white ">Home</button> */}
                 <button className="text-2xl font-bold text-gray-800 dark:text-white" alt="Contact Me" ></button>
                 <BiSolidContact className='relative flex flex-wrap scale-200 text-2xl cursor-pointer text-gray-800 dark:text-white' onClick={scrollToContact}/>
@@ -79,7 +80,7 @@ export const Header= () => {
                   </a>
                 </button>
                 
-            </div>
+            </motion.div>
         </div>
             </div>
         </div>

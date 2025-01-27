@@ -1,6 +1,7 @@
 import React from 'react';
 import image from '../assets/images/cvphoto.png';
 import { BiCurrentLocation, BiEnvelope, BiPhone, BiMoon, BiSun, BiLogoGithub, BiLogoInstagram, BiLogoLinkedin } from 'react-icons/bi';
+import { motion } from 'motion/react';
 
 const HomeLeft = ({darkMode, toggleDarkMode}) => {
     return (
@@ -13,14 +14,15 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
                     <img src={image} alt="" className='w-32 rounded-full'/>
 
 
-                    <div className="text-center space-y-1">
+                    <motion.div className="text-center space-y-1" initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}}>
                         <h1 className="text-4xl font-light">Caleb <span className='font-semibold'>Regan</span>
                         </h1>
                         <h3 className ='text-xl font-light pb-10'>Front-End Web Developer</h3>
 
-                    </div>
+                    </motion.div>
 
                     <button className='absolute md:left-10 md:top-8 md:-translate-y-20 lg:left-10 lg:top-8 lg:-translate-y-20 sm:right-10 sm:top-10 sm:translate-y-0 xs:right-10 xs:top-0 xs:-translate-y-8' onClick={toggleDarkMode}> 
+                        <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} >
                         {
                             darkMode ? (
                                 <BiSun className ='text-2xl'/>
@@ -29,10 +31,10 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
                             )
                             }
 
-
+                        </motion.div>
                         </button>
                     </div>
-                    <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-gray-700">
+                    <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-gray-700">
                         <ul className="space-y-3"> 
                             <li className="flex items-center gap-2">
                                 <BiCurrentLocation className="text-xl"/>
@@ -49,7 +51,7 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
 
 
                         </ul>
-                    </div>
+                    </motion.div>
 
 
                     {/* <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-gray-700">
@@ -73,9 +75,9 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
 
                         </ul>
                     </div> */}
-                        <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-gray-700">
-                            <h1 className='text-base font-semibold md:text-2xl'>EDUCATION</h1>
-                                <ul>
+                        <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-gray-700">
+                            <motion.h1 initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className='text-base font-semibold md:text-2xl'>EDUCATION</motion.h1>
+                                <motion.ul initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}}>
                                     <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:left-[-6px] before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:bg-black dark:before:bg-white before:transform'>
                                         <span className = 'font-semibold'>
                                             Bachelor of Science in Cybersecurity
@@ -87,8 +89,8 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
                                             2023 - Present
                                         </span> 
                                     </li>
-                                </ul>
-                                <ul>
+                                </motion.ul>
+                                <motion.ul initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}}>
                                     <li className='relative flex flex-col gap-1 border-l p-6 before:absolute before:left-[-6px] before:top-1/2 before:h-3 before:w-3 before:-translate-y-1/2 before:rounded-full before:bg-black dark:before:bg-white before:transform'>
                                         <span className = 'font-semibold'>
                                             Undergraduate Coursework in Neuroscience
@@ -100,54 +102,54 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
                                             2020 - 2022
                                         </span> 
                                     </li>
-                                </ul>
-                        </div>
-                    <div className="flex flex-col items-start justify-start border-b p-5 dark:border-gray-700">
+                                </motion.ul>
+                        </motion.div>
+                    <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}}className="flex flex-col items-start justify-start border-b p-5 dark:border-gray-700">
                         <h1 className='text-base font-semibold md:text-2xl'>SKILLS</h1>
                         <p className='flex flex-col items-start justify-start text-sm gap-y-10 font-lighter italic'>Skills & Experience</p>
 
                         <div className="flex flex-wrap gap-3 pt-5">
                             <div className="flex flex-wrap gap-3 justify-center">
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Front-End Development</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Information Security</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Data Analysis</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Responsive Design</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Code Review</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">API Integration</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Collaboration</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Problem Solving</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Cloud Services</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Automation Scripting</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Network Security</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">DevOps Practices</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Database Management</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Front-End Development</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Information Security</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Data Analysis</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Responsive Design</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Code Review</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">API Integration</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Collaboration</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Problem Solving</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Cloud Services</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Automation Scripting</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Network Security</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">DevOps Practices</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Database Management</span>
 
 
                            
                             </div>
                         </div>
-                    </div>
-                        <div className="flex flex-col items-start justify-start border-b p-5 dark:border-gray-700">
-                        <h1 className='text-base font-semibold md:text-2xl'>TECHNOLOGIES</h1>
+                    </motion.div>
+                        <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className="flex flex-col items-start justify-start border-b p-5 dark:border-gray-700">
+                        <motion.h1 initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className='text-base font-semibold md:text-2xl'>TECHNOLOGIES</motion.h1>
                         <p className='flex flex-col items-start justify-start text-sm gap-y-10 font-lighter italic'>Known Coding Languages & Softwares</p>
                         <div className="flex flex-wrap gap-3 pt-5"></div>
-                            <div className="flex flex-wrap gap-3 justify-center">
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Python</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">SQL</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Azure</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">JavaScript</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">React</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Docker</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Linux Systems</span>
+                            <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}}className="flex flex-wrap gap-3 justify-center">
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Python</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">SQL</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Azure</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">JavaScript</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">React</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Docker</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Linux Systems</span>
 
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">HTML</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">CSS</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Node.js</span>
-                                <span className="bg-gray-200 dark:bg-gray-700 p-2 rounded-lg text-xs">Git</span>                            </div>
-                        </div>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">HTML</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">CSS</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Node.js</span>
+                                <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Git</span>                            </motion.div>
+                        </motion.div>
 
-                        <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-gray-700">
-                            <h1 className='text-base font-semibold md:text-2xl'>HOBBIES</h1>
+                        <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-gray-700">
+                            <motion.h1 initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}}className='text-base font-semibold md:text-2xl'>HOBBIES</motion.h1>
 
                             <div className="flex flex-wrap gap-16 p-3">
                                 <ul className = 'flex list-disc flex-col gap-3'>
@@ -158,8 +160,8 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
                                 </ul>
                                 
                             </div>
-                        </div>
-                            <div className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-gray-700">
+                        </motion.div>
+                            <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className="flex flex-col items-start justify-start gap-5 border-b p-5 dark:border-gray-700">
                             <h1 className='text-base font-semibold md:text-2xl'>LANGUAGES</h1>
 
 
@@ -168,7 +170,7 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
                                 </ul>
                                 
 
-                        </div>
+                        </motion.div>
                     </div>    
     )
 }
