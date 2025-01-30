@@ -17,7 +17,8 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
                     <motion.div className="text-center space-y-1" initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}}>
                         <h1 className="text-4xl font-light">Caleb <span className='font-semibold'>Regan</span>
                         </h1>
-                        <h3 className ='text-xl font-light pb-10'>Front-End Web Developer</h3>
+                        <h3 className ='text-xl font-light'>Front-End Web Developer</h3>
+                        <h3 className ='text-base font-thin pb-10 text-gray-800 dark:text-gray-200'>Aspiring Cybersecurity Engineer</h3>
 
                     </motion.div>
 
