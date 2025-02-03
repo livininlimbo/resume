@@ -154,12 +154,12 @@ const HomeRight = () => {
                                             </li>
                                             <li className='flex items-center text-sm font-light pt-2'>
                                                 <IoIosArrowForward className='text-base -translate-x-2'/>
-                                                <span>IN206 Routing and Switching II
+                                                <span>IT222 Introduction to Cloud Computing
                                                 </span>
                                             </li>
                                             <li className='flex items-center text-sm font-light pt-2'>
                                                 <IoIosArrowForward className='text-base -translate-x-2'/>
-                                                <span>IT262 Certified Ethical Hacking I
+                                                <span>MM207 Statistics
                                                 </span>
                                             </li>
                                             </ul>

@@ -18,7 +18,7 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
                         <h1 className="text-4xl font-light">Caleb <span className='font-semibold'>Regan</span>
                         </h1>
                         <h3 className ='text-xl font-light'>Front-End Web Developer</h3>
-                        <h3 className ='text-base font-thin pb-10 text-gray-800 dark:text-gray-200'>Aspiring Cybersecurity Engineer</h3>
+                        <h3 className ='text-base font-thin pb-10 text-gray-800 dark:text-gray-200'>Aspiring DevSecOps Engineer</h3>
 
                     </motion.div>
 
