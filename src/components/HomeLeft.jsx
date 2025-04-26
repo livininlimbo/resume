@@ -133,7 +133,7 @@ const HomeLeft = ({darkMode, toggleDarkMode}) => {
                     </motion.div>
                         <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className="flex flex-col items-start justify-start border-b p-5 dark:border-gray-700">
                         <motion.h1 initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}} className='text-base font-semibold md:text-2xl'>TECHNOLOGIES</motion.h1>
-                        <p className='flex flex-col items-start justify-start text-sm gap-y-10 font-lighter italic'>Known Coding Languages & Softwares</p>
+                        <p className='flex flex-col items-start justify-start text-sm gap-y-10 font-lighter italic'>Known Technologies</p>
                         <div className="flex flex-wrap gap-3 pt-5"></div>
                             <motion.div initial={{ opacity: 0.4, scale: 0.8}} whileInView={{ opacity: 1, scale: 1}} viewport={{ once: true}}className="flex flex-wrap gap-3 justify-center">
                                 <span className="bg-gray-200 dark:bg-gray-800 p-2 rounded-lg text-xs">Python</span>
